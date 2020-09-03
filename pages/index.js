@@ -1,65 +1,25 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout from "./components/Layout";
 
-export default function Home() {
+export default function Profile() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Layout>
+      <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div className="col-lg-8 col-md-12 col-sm-12 p-4 d-flex flex-column position-static">
+          <strong className="d-inline-block mb-2 text-success">Hi there 👋</strong>
+          <p className="text-justify">
+              I'm a Software Engineer 👨‍💻 and Psychology student 🧠 living in <a target="blank" href="https://www.youtube.com/watch?v=3SzOUvB1WSg">the happiest place on earth</a> 🌎.
+          </p>
+          <p className="text-justify">
+            I have 10+ years of experience in the software industry working in different roles. Currently, I work at <a target="blank" href="https://www.britecore.com/">BriteCore</a> as a Senior Software Engineer in a highly distributed team, and I have worked with remote teams for 6+ years. Also, I have set up branch offices for tech companies from scratch, from selecting an office space, to hire and train the staff.
+          </p>
+          <p className="text-justify">
+            If you want to know more about my work experience, check out my <a target="blank" href="resume.pdf">resume</a> 😀.
+          </p>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <div className="col-lg-4 col-md-12 col-sm-12 d-lg-block">
+          <img style={{width:"100%", height:"100%"}} className="bd-placeholder-img" src="us.jpeg"/>
+        </div>
+      </div>
+    </Layout>
   )
 }
