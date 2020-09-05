@@ -20,7 +20,7 @@ function Books({ books }) {
       ))}
     </div>
     <div className="col text-center mb-5">
-      <a className="btn btn-primary" href="#">Complete List</a>
+      <a className="btn btn-primary" target="blank" href="https://www.goodreads.com/user/show/30521997-omar-iba-ez">Complete List</a>
     </div>
     </Layout>
   )
